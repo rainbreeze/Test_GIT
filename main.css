@@ -5,6 +5,10 @@ body {
     height: 2000px;
 }
 
+li {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -38,9 +42,6 @@ a {
 
 header {
     background-color: transparent;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 42px;
     left: 0;
@@ -62,10 +63,26 @@ header {
 
 header .menu {
     position: absolute;
+    display: flex;
     width: 85%;
     height: 80px;
     margin: 0;
-    background-color: whitesmoke;
+    padding: 0;
+}
+
+header .menu li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header .menu li a {
+    color: #333;
+    margin: 0 20px;
+    white-space: nowrap;
+    font-size: 20px;
 }
 
 header .my_info {
@@ -73,5 +90,14 @@ header .my_info {
     width: 15%;
     right: 0;
     height: 80px;
-    background-color: beige;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/Jihoon/bbb.png)
+}
+
+header .my_info h4 {
+    color: white;
+    font-size: 28px;
 }
