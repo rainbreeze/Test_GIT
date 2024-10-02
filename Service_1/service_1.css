@@ -1,3 +1,7 @@
 body {
-    color: red;
+    color: rgb(44, 43, 93);
+}
+
+.image {
+    background-image: url(../images/Daegun/ex2.png);
 }
